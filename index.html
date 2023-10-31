@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personl Framework</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Limelight&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,10 +18,10 @@
 
     <header class="site-header">
         <div class="site-logo">
-            <a href="index.html"><img src="img/bar35logo_marquee.png" alt="Site Name Logo" width="200" height="200"></a>
+            <a href="index.html"><img src="img/bar35logo_marquee.png" alt="Site Name Logo" width="100" height="100"></a>
             <h1 class="hide-visually"><a href="index.html">Personal Framework</a></h1>
         </div>
-        <div class="site-nav" data-navstate="closed"> 
+        <div class="site-nav" data-navstate="closed">
             <button class="menu-button">
                 <svg width="30" height="24">
                     <rect class="navicon-top" x="0" y="0" width="30" height="4"></rect>
@@ -25,10 +31,11 @@
                 </svg>
                 <span class="hide-visually">Toggle Menu</span>
             </button>
-            
+
             <ul>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Drinks</a></li>
+                <li><a href="about.html">Luna's Hideaway</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
     </header>
@@ -36,47 +43,29 @@
     <main class="site-main">
 
         <section class="hero">
-            <div class="container">
-
-                <div class="row">
-                    <div class="one-half">
-                        <h1>This is a Personal Framework</h1>
-                        <p>It is a basic but opinionated set of starter HTML and CSS that you can use to begin
-                            hand-coding any modern static
-                            website. It uses CSS custom properties for variables.</p>
-                    </div>
-
-                    <div class="one-half">
-                        <img class="fade-in" src="img/placeholder_1600x800.gif" alt="Hero Image" width="1600"
-                            height="800">
-                    </div>
-                </div>
-            </div>
+            <img class="fade-in" src="img/bar35_logo.jpg" alt="Hero Image" width="auto" height="auto">
         </section>
 
-        <section>
+        <section class="home-booking">
+
+            <div class="animate-me-on-scroll shimmy-up section-background-image">
+                <img src="img/Bar_hall.jpg" alt="interior photo of bar hall" width="auto" height="auto">
+            </div>
+
             <div class="container">
                 <div class="row animate-me-on-scroll shimmy-up">
-                    <div class="one-third">
-                        <img src="img/placeholder_800x800.gif" alt="Thumb Image" width="800" height="800">
-                        <h2>Heading 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquam, cumque adipisci
-                            suscipit rerum autem ut atque dolor ex saepe?</p>
+                    <div class="one-half"></div>
+                    <div class="one-half">
+                        <div class="glow-box-home">
+                            <h2>Heading 2</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquam, cumque adipisci
+                                suscipit rerum autem ut atque dolor ex saepe?</p>
+                        </div>
                     </div>
-                    <div class="one-third">
-                        <img src="img/placeholder_800x800.gif" alt="Thumb Image" width="800" height="800">
-                        <h2>Heading 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquam, cumque adipisci
-                            suscipit rerum autem ut atque dolor ex saepe?</p>
-                    </div>
-                    <div class="one-third">
-                        <img src="img/placeholder_800x800.gif" alt="Thumb Image" width="800" height="800">
-                        <h2>Heading 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquam, cumque adipisci
-                            suscipit rerum autem ut atque dolor ex saepe?</p>
-                    </div>
+
                 </div>
             </div>
+
         </section>
 
 
