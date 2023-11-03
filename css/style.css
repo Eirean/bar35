@@ -283,73 +283,103 @@ img {
 /* SITE NAV */
 
 
+.site-header .site-nav .menu-button {
+    display: none;
+}
 
 .site-header .site-nav ul {
     display: flex;
-    flex-direction: column;
     list-style: none;
-    align-items: center;
-    justify-content: center;
+}
+
+.site-header .site-nav li {
     margin: 0;
     padding: 0;
-    background-color: rgb(12, 15, 182);
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    min-height: 100vh;
-    width: 50%;
-    transition: all .4s ease-out;
 }
 
-.site-header .site-nav[data-navstate="closed"] ul {
-    transform: translateX(100vw);
-    opacity: 0;
-    transition: all .3s ease-in;
+.site-header .site-nav a {
+    display: block;
+    padding: 1em;
+
 }
 
-.site-header .site-nav[data-navstate="open"] ul {
-    transform: translateX(0);
-    opacity: 1;
-    transition: all .3s ease-out;
+
+
+@media (max-width:767px) {
+    .site-header .site-nav .menu-button {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 1.5em;
+        z-index: 200;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    .site-header .site-nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 6em 0 6em 0;
+        background-color: blue;
+        box-shadow: blue 0 0 90px 110px;
+        color: var(--color-body-text-box);
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        /* min-height: 100vh; */
+        width: 50%;
+        transition: all .4s ease-out;
+
+    }
+
+    .site-header .site-nav a {
+        color: var(--color-body-text-box);
+
+    }
+
+    .site-header .site-nav[data-navstate="closed"] ul {
+        transform: translateX(100vw);
+        opacity: 0;
+        transition: all .5s ease-in;
+    }
+
+    .site-header .site-nav[data-navstate="open"] ul {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all .5s ease-out;
+    }
+
+    .site-header .site-nav[data-navstate="open"] .menu-button {
+        position: fixed;
+    }
+
+    .site-nav .menu-button svg {
+
+        display: block;
+    }
+
+    .site-nav .menu-button svg rect {
+        fill: white;
+        transform-origin: center center;
+        transition: all .4s ease-out;
+
+    }
+
+    .site-nav[data-navstate="open"] .navicon-top {
+
+        transform: translate(-7px, 7px) rotate(45deg);
+        animation: navicon-top-toggle .4s ease-out forwards;
+    }
 }
 
 /* SITE NAV MENU BUTTON */
-
-.site-header .site-nav .menu-button {
-    position: absolute;
-    top: 1em;
-    right: 1.5em;
-    z-index: 200;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: transparent;
-}
-
-
-
-.site-header .site-nav[data-navstate="open"] .menu-button {
-    position: fixed;
-}
-
-.site-nav .menu-button svg {
-
-    display: block;
-}
-
-.site-nav .menu-button svg rect {
-    fill: white;
-    transform-origin: center center;
-    transition: all .4s ease-out;
-
-}
-
-.site-nav[data-navstate="open"] .navicon-top {
-
-    transform: translate(-7px, 7px) rotate(45deg);
-    animation: navicon-top-toggle .4s ease-out forwards;
-}
 
 @keyframes navicon-top-toggle {
     0% {
@@ -389,11 +419,7 @@ img {
     }
 }
 
-.site-header .site-nav a {
-    display: block;
-    padding: 1em;
 
-}
 
 /* SITE MAIN */
 
@@ -405,16 +431,27 @@ section {
 /* HERO SECTION */
 
 .hero {
-    padding-top: 0;
+    padding: 0;
+    margin-bottom: 6em;
     background: var(--color-hero-bg);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    /* min-height: 80vh; */
+    height: 50vh;
+    /* display: flex;
+    align-items: center; */
     color: white;
 }
 
-.hero h1 {
-    color: white;
+@media (min-width: 900px) {
+    .hero {
+        height: 80vh;
+    }
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
 }
 
 /* SITE FOOTER */
@@ -509,7 +546,7 @@ section {
 
 .fade-in {
     animation-name: my-fade-in;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
