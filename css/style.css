@@ -27,8 +27,8 @@
     # GLOW BUTTON NOSH
     # CUSTOM HELPERS
     # CUSTOM TYPE BLOCK/SPECIMEN
-    # CUSTOM ANIMATIONS
-   
+    # SCROLL TRIGGER ANIMATIONS
+    # LUNAS HIDEAWAY
 
 */
 
@@ -762,7 +762,7 @@ section {
 /* SITE FOOTER */
 
 .site-footer {
-    background-image: url("https://drive.google.com/uc?export=view&id=1F2fPNNonEmj1ohhOGIOW2Xzk1xMkdoFh");
+    background-image: url(../img/wall.jpg);
     background-color: var(--color-footer-bg);
     color: var(--color-footer-text);
     padding: 3em;
@@ -1210,6 +1210,26 @@ section {
     padding: 3em 0 0 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.fade-bottom {
+    position: relative;
+}
+
+.fade-bottom::after {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid red; */
+}
+
 /* CUSTOM SECTION STYLING */
 
 .home-booking {
@@ -1264,7 +1284,7 @@ section {
 
 
 
-/* SCROLL TRIGGER ANMATION   */
+/* SCROLL TRIGGER ANIMATION   */
 
 
 
@@ -1349,4 +1369,25 @@ section {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+/* LUNAS HIDEAWAY */
+
+.hero-sub {
+    background-image: url(../img/wall.jpg);
+    background-size: cover;
+}
+
+.happy-hour h1 {
+    font-family: 'Lily Script One';
+}
+
+.happy-hour h3 {
+    font-family: 'Josephin Sans'
+}
+
+.happy-hour p {
+    font-family: 'Jacques Francois';
+    color: orange;
+    text-align: center;
 }
