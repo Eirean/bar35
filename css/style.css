@@ -1383,11 +1383,61 @@ section {
 }
 
 .happy-hour h3 {
-    font-family: 'Josephin Sans'
+    font-family: 'Josefin Sans', sans;
 }
 
 .happy-hour p {
-    font-family: 'Jacques Francois';
+    font-family: 'Jacques Francois', sans;
     color: orange;
     text-align: center;
+}
+
+.happy-hour ul {
+    list-style: none;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-items {
+    text-align: left;
+}
+
+.menu-items li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.menu h1 {
+    font-family: 'Lily Script One';
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-text {
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans;
+}
+
+.item-description {
+    font-size: 1rem;
+    font-family: 'Jacques Francois';
+    color: orange;
+
+}
+
+.item-price {}
+
+.item-amount {
+    font-size: .8rem;
+    color: rgba(255, 255, 255, .6);
+    font-style: italic;
 }
