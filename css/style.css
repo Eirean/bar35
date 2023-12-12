@@ -1439,6 +1439,7 @@ section {
 .item-price {}
 
 .item-amount {
+    margin-bottom: .5em;
     font-size: .8rem;
     color: rgba(255, 255, 255, .6);
     font-style: italic;
@@ -1528,13 +1529,6 @@ section {
 
 /* CONTACTS */
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    padding-bottom: 100px;
-}
-
 #contact {
     width: 100%;
     height: 100%;
@@ -1564,12 +1558,17 @@ body {
 .form-horizontal {
     /*float: left;*/
     max-width: 400px;
-    font-family: 'Lato';
     font-weight: 400;
 }
 
 .form-control,
 textarea {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 1em 0;
+    border: 1px solid white;
+    padding: 1em;
+    width: 100%;
     max-width: 400px;
     background-color: #000;
     color: #fff;
@@ -1577,28 +1576,45 @@ textarea {
 }
 
 .send-button {
+    padding: 0;
+    background-color: white;
+    border: none;
     margin-top: 15px;
-    height: 34px;
+    height: 60px;
     width: 400px;
-    overflow: hidden;
+    overflow: visible;
     transition: all .2s ease-in-out;
+}
+
+.send-button:hover {
+    background-color: yellow;
 }
 
 .alt-send-button {
+    /* border: 1px solid green; */
     width: 400px;
-    height: 34px;
+    height: 60px;
     transition: all .2s ease-in-out;
 }
 
+.fa-paper-plane {
+    /* border: 1px solid red; */
+    height: 60px;
+    padding-top: 25px;
+
+}
+
 .send-text {
+    /* border: 1px solid red; */
+    padding-top: 25px;
     display: block;
-    margin-top: 10px;
-    font: 700 12px 'Lato', sans-serif;
+    line-height: 1;
+    height: 60px;
     letter-spacing: 2px;
 }
 
 .alt-send-button:hover {
-    transform: translate3d(0px, -29px, 0px);
+    transform: translate3d(0px, -60px, 0px);
 }
 
 /* Begin Right Contact Page */
